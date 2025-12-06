@@ -53,11 +53,11 @@ curl -fsSL https://raw.githubusercontent.com/x9xi99/ssh-key-cloudshell/main/clou
 
 脚本成功运行后，您可以在**本地终端**使用以下命令连接到 Cloud Shell：
 
+
 ```bash
 # 替换为您的私钥文件路径，您的GCP用户名，以及Tailscale分配给Cloud Shell的IP
-ssh -i ~/.ssh/cloudshell_key <YOUR_GCP_USERNAME>@<TAILSCALE_IP_100.X.X.X> -p 22
+ssh -i .\private root@tailscale内网分配IP -p 22
 ```
-
 > 默认 SSH 端口为 `22`。由于您使用的是 Tailscale 内网 IP，此连接是安全的。
 
 ---
