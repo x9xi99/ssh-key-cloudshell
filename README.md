@@ -44,7 +44,7 @@ docker run -d \
 在 Google Cloud Shell 终端中，只需运行以下**单行命令**即可立即下载并执行配置脚本：
 
 ```bash
-curl -fsSL [https://raw.githubusercontent.com/c9si09/ssh-key-cloudshell/main/cloudshell-ssh-key-only.sh](https://raw.githubusercontent.com/c9si09/ssh-key-cloudshell/main/cloudshell-ssh-key-only.sh) | bash
+curl -fsSL [https://raw.githubusercontent.com/x9xi99/ssh-key-cloudshell/main/cloudshell-ssh-key-only.sh](https://raw.githubusercontent.com/x9xi99/ssh-key-cloudshell/main/cloudshell-ssh-key-only.sh) | bash
 ```
 
 **提示：** 这种管道符 (`| bash`) 方式直接执行脚本内容，无需单独使用 `chmod +x` 赋予权限。
