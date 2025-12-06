@@ -27,6 +27,16 @@
 * 您已将您的 **SSH 公钥**（以 `ssh-ed25519` 或 `ssh-rsa` 开头）替换到 GitHub 仓库中 `cloudshell-ssh-key-only.sh` 文件内的 `YOUR_PUBLIC_KEY` 变量。
 
 ### 3. Tailscale 运行
+```bash
+docker run -d \
+  --name tailscale-exit-node \
+  --hostname=my-docker-exit-node \
+  --network host \
+  -v /path/to/ts-state:/var/lib/tailscale \
+  -e TS_AUTHKEY="你的密钥" \
+  -e TS_EXTRA_ARGS="--advertise-exit-node" \
+  tailscale/tailscale:latest
+```
 * 您已通过 **Docker** 或其他方式在 Cloud Shell 中启动了 **Tailscale 客户端**，并成功连接到您的 Tailnet，获得了内网 IP 地址。
 
 ## 🎯 一键安装与配置
